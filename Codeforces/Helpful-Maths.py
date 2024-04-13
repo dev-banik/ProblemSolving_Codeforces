@@ -1,0 +1,5 @@
+str = input()
+str_rmv = str.translate({ord(i): None for i in '+'})
+res = ''.join(sorted(str_rmv))
+res = '+'.join(res[i:i + 1] for i in range(0, len(res), 1)) 
+print(res)
