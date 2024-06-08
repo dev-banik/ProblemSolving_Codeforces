@@ -1,0 +1,6 @@
+n,k,l,c,d,p,nl,np=map(int, input().split())
+drink_ml=int(k*l)
+make_toast=int(drink_ml/nl)
+lime=int(c*d)
+salt=int(p/np)
+print(int(min(make_toast, lime, salt)/n))
