@@ -1,0 +1,5 @@
+s=input()
+s1=s.replace('--', '2')
+s2=s1.replace('-.', '1')
+s3=s2.replace('.', '0')
+print(s3)
