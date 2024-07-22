@@ -1,9 +1,5 @@
-count=0
-a=input().split()
-lst=list(a)
-for i in range(0, len(lst)):
-    for j in range(i+1, len(lst)):
-        if a[i] == a[j]:
-            lst.remove(a[j])
-            count+=1
-print(count)
+t=int(input())
+for _ in range(0, t):
+    n=int(input())
+    lst=list(map(int, input().split()))
+    print("YES") if (sum(lst)%2!=0) else print("NO")
